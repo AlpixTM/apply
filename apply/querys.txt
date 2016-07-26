@@ -1,3 +1,5 @@
 // All Querys
 ALTER DATABASE public_apply COLLATE utf8_bin
 CREATE TABLE log (date date,ip varchar(45),site	varchar(9),Address varchar(255),script varchar(25),action int(11),error text)
+CREATE TABLE config (name varchar(45),value varchar(100))
+ALTER TABLE `config` ADD PRIMARY KEY(`name`)
