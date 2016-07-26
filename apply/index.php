@@ -18,7 +18,7 @@ echo"<head>
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=de \">
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/icon?family=Material+Icons \">
 <link rel= \"stylesheet \" href= \"https://code.getmdl.io/1.1.3/material.$first-$second.min.css \">
-<link rel= \"stylesheet \" href= \"default.css \">
+<link rel= \"stylesheet \" href= \"styles/default.css \">
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700 \" type= \"text/css \">
 </head>";
 ?>
