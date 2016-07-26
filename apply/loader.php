@@ -1,8 +1,8 @@
 <?php
 require_once 'dbconf.php';
+require_once 'conf.php';
 
 //variables
-$dev=TRUE;
 $ip=$_SERVER['REMOTE_ADDR'];
 $date = date("d-m-y");
 $site=$_GET["site_app"];
