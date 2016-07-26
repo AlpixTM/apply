@@ -1,6 +1,7 @@
 <?php
 require_once 'dbconf.php';
 require_once 'conf.php';
+require_once 'connect.php';
 
 //variables
 $ip=$_SERVER['REMOTE_ADDR'];
@@ -18,10 +19,7 @@ if ($site=="") {
 if ($dev==TRUE) {
 	error_reporting(E_ALL);
 }
-$link = mysqli_connect ( MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT, MYSQL_DATENBANK, MYSQL_PORT );
-if (!$link) {
-	die('Connect Error: ' . mysqli_connect_error());
-}
+
 
 
 ?>
