@@ -15,6 +15,7 @@ echo"<head>
 <meta name= \"msapplication-TileImage \" content= \"images/$icon \">
 <meta name= \"msapplication-TileColor \" content= \"#3372DF \">
 <link rel= \"shortcut icon \" href= \"images/$icon \">
+<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=de \">
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/icon?family=Material+Icons \">
 <link rel= \"stylesheet \" href= \"https://code.getmdl.io/1.1.3/material.$first-$second.min.css \">
