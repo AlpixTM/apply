@@ -3,4 +3,5 @@ $link = mysqli_connect ( MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT, MYSQL_DATEN
 if (!$link) {
 	die('Connect Error: ' . mysqli_connect_error());
 }
+mysqli_set_charset ( $link, 'utf8' );
 ?>
