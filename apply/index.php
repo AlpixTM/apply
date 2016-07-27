@@ -34,16 +34,23 @@ echo"<head>
         
 				 <footer class='mdl-mini-footer'>
           <div class='mdl-mini-footer--left-section'>
-         <?php 
-         echo"
-             <a target='_blank' href='https://twitter.com/$twitter_' >   <button class='mdl-mini-footer--social-btn social-btn social-btn__twitter' href='https://twitter.com/AlpixTM' >
+         <?php if ($twitter_on=="true") {
+         	         echo"
+             <a target='_blank' href='https://twitter.com/$twitter' >   <button class='mdl-mini-footer--social-btn social-btn social-btn__twitter' href='https://twitter.com/AlpixTM' >
               <span class='visuallyhidden'>Twitter</span>
 				
-            </button></a>"
+            </button></a>";
+         }
+
 				?>
           </div>
-<a href='$footer_link' target='_blank'  class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white' data-upgraded=',MaterialButton,MaterialRipple'>$footer_link_text<span class='mdl-button__ripple-container'><span class='mdl-ripple is-animating' style='width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(64px, 28px);'></span></span></a>
-        </footer>
+          <?php
+          if ($footerbutton_on=="true") {
+          	echo"<a href='$footerbutton_link' target='_blank'  class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white' data-upgraded=',MaterialButton,MaterialRipple'>$footerbutton_link_text_link_text<span class='mdl-button__ripple-container'><span class='mdl-ripple is-animating' style='width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(64px, 28px);'></span></span></a>
+		";
+          }
+       ?>  
+       </footer>
    
 		        </main>
       <div class="mdl-layout__obfuscator"></div>
