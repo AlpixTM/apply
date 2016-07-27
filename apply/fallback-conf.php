@@ -8,6 +8,6 @@ $second="orange";
 $twitter_on="true";
 $twitter="AlpixTM";
 $footerbutton_on="true";
-$footerbutton_on_link="https://example.com";
+$footerbutton_link="https://example.com";
 $footer_link_text="Impressum und Datenschutzerklärung ODER WAS DU WILLST";
 ?>
