@@ -6,15 +6,16 @@ require_once 'fallback-conf.php';
 //variables
 $ip=$_SERVER['REMOTE_ADDR'];
 $date = date("d-m-y");
-$site=$_GET["site_app"];
+
 
 
 // dynamic variables & settings
+$site=$_GET["$urlparam"];
 if ($dev==true) {
 	echo $site;
 }
 if ($site=="") {
-	$site="main";
+	$site="home";
 }
 if ($dev==TRUE) {
 	error_reporting(E_ALL);
