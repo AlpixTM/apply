@@ -46,7 +46,7 @@ echo"<head>
           </div>
           <?php
           if ($footerbutton_on=="true") {
-          	echo"<a href='$footerbutton_link' target='_blank'  class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white' data-upgraded=',MaterialButton,MaterialRipple'>$footerbutton_link_text_link_text<span class='mdl-button__ripple-container'><span class='mdl-ripple is-animating' style='width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(64px, 28px);'></span></span></a>
+          	echo"<a href='$footerbutton_link' target='_blank'  class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white' data-upgraded=',MaterialButton,MaterialRipple'>$footerbutton_link_text<span class='mdl-button__ripple-container'><span class='mdl-ripple is-animating' style='width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(64px, 28px);'></span></span></a>
 		";
           }
        ?>  
