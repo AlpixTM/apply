@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT  * FROM  `config`";
+$sql = "SELECT * FROM `config` WHERE LENGTH(`value`) > 0";
 $db_erg = mysqli_query ( $link, $sql );
 if ($dev==true) {
 	if (! $db_erg) {
