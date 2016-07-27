@@ -23,5 +23,29 @@ echo"<head>
 <link rel= \"stylesheet \" href= \"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700 \" type= \"text/css \">
 </head>";
 ?>
+<body>
 
+				    <div class='demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded'>
+      <main class='mdl-layout__content'>
+
+        <div class='demo-blog__posts mdl-grid'>
+         <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>   
+          </div>
+   <?php   echo"     
+				 <footer class='mdl-mini-footer'>
+          <div class='mdl-mini-footer--left-section'>
+             <a target='_blank' href='https://twitter.com/$twitter' >   <button class='mdl-mini-footer--social-btn social-btn social-btn__twitter' href='https://twitter.com/AlpixTM' >
+              <span class='visuallyhidden'>Twitter</span>
+				
+            </button></a>
+				
+          </div>
+<a href='$footer_link' target='_blank'  class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white' data-upgraded=',MaterialButton,MaterialRipple'>$footer_link_text<span class='mdl-button__ripple-container'><span class='mdl-ripple is-animating' style='width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(64px, 28px);'></span></span></a>
+        </footer>
+        ";?>
+		        </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</body>
 </html>
