@@ -1,4 +1,5 @@
 <?php
+$urlparam = "site_app";
 $description="Bewerbe dich hier. Diese Seite nutzt Apply von Alpix";
 $title="Apply by Alpix";
 $icon="logo.jpg";
