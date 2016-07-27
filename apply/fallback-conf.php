@@ -9,5 +9,5 @@ $twitter_on="true";
 $twitter="AlpixTM";
 $footerbutton_on="true";
 $footerbutton_link="https://example.com";
-$footer_link_text="Impressum und Datenschutzerklärung ODER WAS DU WILLST";
+$footerbutton_link_text="Impressum und Datenschutzerklärung ODER WAS DU WILLST";
 ?>
