@@ -1,6 +1,6 @@
 // All setup Querys
 ALTER DATABASE public_apply COLLATE utf8_bin
 CREATE TABLE log (date date,ip varchar(45),site	varchar(9),Address varchar(255),script varchar(25),action int(11),error text)
-CREATE TABLE config (name varchar(45),value varchar(200))
+CREATE TABLE config (name varchar(45),value varchar(500))
 ALTER TABLE `config` ADD PRIMARY KEY(`name`)
 CREATE TABLE route (site varchar(8),topic text,description varchar(500),title varchar(50),image varchar(100),status varchar(3),showinlist varchar(5),id int(11)AUTO_INCREMENT,PRIMARY KEY (id))
