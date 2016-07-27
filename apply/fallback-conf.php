@@ -4,7 +4,9 @@ $title="Apply by Alpix";
 $icon="logo.jpg";
 $first="grey";
 $second="orange";
+$footer_on="true";
 $twitter="AlpixTM";
-$footer_link="https://imprint.mcversum.net";
+$footerbutton_on="true";
+$footerbutton_on_link="https://example.com";
 $footer_link_text="Impressum und Datenschutzerklärung ODER WAS DU WILLST";
 ?>
