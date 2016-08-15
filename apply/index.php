@@ -6,7 +6,7 @@ echo"<head>
 <meta name= \"description \" content= \"$description \">
 <meta name= \"viewport \" content= \"width=device-width, initial-scale=1.0, minimum-scale=1.0 \">
 <title>$title</title>
-<meta name= \ \"mobile-web-app-capable \" content= \"yes \">
+<meta name=  \"mobile-web-app-capable \" content= \"yes \">
 <link rel= \"icon \" sizes= \"192x192 \" href= \"images/$icon \">
 <meta name= \"apple-mobile-web-app-capable \" content= \"yes \">
 <meta name= \"apple-mobile-web-app-status-bar-style \" content= \"black \">
@@ -38,7 +38,7 @@ echo"<head>
          	         echo"
              <a target='_blank' href='https://twitter.com/$twitter' >   <button class='mdl-mini-footer--social-btn social-btn social-btn__twitter' href='https://twitter.com/AlpixTM' >
               <span class='visuallyhidden'>Twitter</span>
-				
+
             </button></a>";
          }
 
