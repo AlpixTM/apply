@@ -36,7 +36,7 @@ if ($ga="true"){
           </div>
      <!-- Alpix look here lel -->
           <?php
-
+            include_once "body.php";
           ?>
 
 
