@@ -31,7 +31,15 @@ echo"<head>
         <div class='demo-blog__posts mdl-grid'>
          <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>   
           </div>
-        
+     <!-- Alpix look here lel -->
+          <?php
+
+          ?>
+
+
+
+
+          <!-- footer -->
 				 <footer class='mdl-mini-footer'>
           <div class='mdl-mini-footer--left-section'>
          <?php if ($twitter_on=="true") {

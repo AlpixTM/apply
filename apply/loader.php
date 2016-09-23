@@ -20,6 +20,4 @@ if ($dev==TRUE) {
 	error_reporting(E_ALL);
 }
 
-
-
 ?>
