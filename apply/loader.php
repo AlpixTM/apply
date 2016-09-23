@@ -9,6 +9,7 @@ $date = date("d-m-y");
 require_once 'db-config-read.php';
 
 // dynamic variables & settings
+
 $site=$_GET["$urlparam"];
 if ($dev==true) {
 	echo $site;
