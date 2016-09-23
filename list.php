@@ -11,8 +11,20 @@ $curlistcount++;
 
 function listentry ($listid){
     include "global.php";
-echo "$listid";
+    $sql ="SELECT * FROM `route` WHERE `id` = $listid";
+    $db_erg = mysqli_query ( $link, $sql );
+    if ($dev==true) {
+        if (! $db_erg) {
+            die ( 'Ungültige Abfrage: ' . mysqli_error () );
+        }
+    }
+    while ($zeile = mysqli_fetch_array ( $db_erg, MYSQL_ASSOC  )) {
+        foreach ($zeile as $key => $value) {
+            $$key=$value;
+        }
+    }
 
+    mysqli_free_result ( $db_erg );
 
     echo" <div class=\"mdl-card on-the-road-again mdl-cell mdl-cell--12-col\">
         <div class=\"mdl-card__media mdl-color-text--grey-50\" style=\"
@@ -34,6 +46,7 @@ $description
         </div>
     </div>
    
-    <div class=\"mdl-card__supporting-text meta mdl-color-text--grey-600\"> </div> </div>";
+    <div class=\"mdl-card__supporting-text meta mdl-color-text--grey-600\"> </div> ";
 }
+echo"</div>";
 ?>
