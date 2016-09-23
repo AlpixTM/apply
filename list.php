@@ -39,7 +39,7 @@ $description
         </div>
         <div class=\"mdl-card__supporting-text meta mdl-color-text--grey-600\">
             <div class=\"minilogo2\">
-                <a href=\"dev\"> <button class=\"mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon\" data-upgraded=\",MaterialButton,MaterialRipple\">
+                <a href=\"$site\"> <button class=\"mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon\" data-upgraded=\",MaterialButton,MaterialRipple\">
                     <i class=\"material-icons\" role=\"presentation\">arrow_forward</i>
                     <span class=\"mdl-button__ripple-container\"><span class=\"mdl-ripple\"></span></span></button> </a>
             </div>
