@@ -25,7 +25,7 @@ function listentry ($listid){
     }
 
     mysqli_free_result ( $db_erg );
-
+if ($showinlist==1){
     echo" <div class=\"mdl-card on-the-road-again mdl-cell mdl-cell--12-col\">
         <div class=\"mdl-card__media mdl-color-text--grey-50\" style=\"
     background-image: url(images/$image);
@@ -48,5 +48,7 @@ $description
    
     <div class=\"mdl-card__supporting-text meta mdl-color-text--grey-600\"> </div> ";
 }
-echo"</div>";
+    echo"</div>";
+}
+
 ?>
