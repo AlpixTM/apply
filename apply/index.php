@@ -32,7 +32,7 @@ if ($ga="true"){
       <main class='mdl-layout__content'>
 
         <div class='demo-blog__posts mdl-grid'>
-         <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>   
+         <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>
           </div>
      <!-- Alpix look here lel -->
           <?php

@@ -1,8 +1,13 @@
 <?php
 // register
+if ($dev=="true")
+{
+    //echo $site;
+}
+
 switch ($site) {
     case "home":
-        include "";
+        include "list.php";
         break;
 
 }
