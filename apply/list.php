@@ -1,18 +1,29 @@
 <?php
 // list generator
+//values $site, $topic, $description,$title,$image
 echo "
 <div class=\"demo-blog__posts mdl-grid\">";
-function d (){
+$curlistcount=0;
+while ($curlistcount < $listcount){
+$curlistcount++;
+    listentry($curlistcount);
+}
+
+function listentry ($listid){
+    include "global.php";
+echo "$listid";
+
+
     echo" <div class=\"mdl-card on-the-road-again mdl-cell mdl-cell--12-col\">
         <div class=\"mdl-card__media mdl-color-text--grey-50\" style=\"
-    background-image: url(images/dev.jpg);
+    background-image: url(images/$image);
 \">
-            <h3><a href=\"dev\" style=\"
+            <h3><a href=\"$site\" style=\"
 
-\">Developer</a></h3>
+\">$title</a></h3>
         </div>
         <div class=\"mdl-color-text--grey-600 mdl-card__supporting-text\">
-            Hier kannst du dich als Developer bewerben! <br> Bitte verlinke nur aussagekräftige Projekte! <br> Anforderungen: <br> • Mindestalter: 14 Jahre Ausnahmen gibt es NICHT! <br> • Teamarbeit <br> • Du benötigst einen Forumaccount! (https://mcversum.net)
+$description
         </div>
         <div class=\"mdl-card__supporting-text meta mdl-color-text--grey-600\">
             <div class=\"minilogo2\">
