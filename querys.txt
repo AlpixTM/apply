@@ -1,7 +1,43 @@
-// All setup Querys 23.9
-ALTER DATABASE public_apply COLLATE utf8_bin
-CREATE TABLE log (date date,ip varchar(45),site	varchar(9),Address varchar(255),script varchar(25),action int(11),error text)
-CREATE TABLE config (name varchar(45),value varchar(500))
-ALTER TABLE `config` ADD PRIMARY KEY(`name`)
-CREATE TABLE route (site varchar(8),topic text,description varchar(500),title varchar(50),image varchar(100),status varchar(3),showinlist varchar(5),id int(11)AUTO_INCREMENT,PRIMARY KEY (id))
-INSERT INTO `public_apply`.`route` (`site`, `topic`, `description`, `title`, `image`, `status`, `showinlist`, `id`) VALUES ('dummie', 'dummie', 'this is a dummie', 'dummie', '/dummie.png', '1', '1', NULL);
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE `config` (
+  `name` varchar(45) COLLATE utf8_bin NOT NULL,
+  `value` varchar(500) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+CREATE TABLE `log` (
+  `date` date DEFAULT NULL,
+  `ip` varchar(45) COLLATE utf8_bin DEFAULT NULL,
+  `site` varchar(9) COLLATE utf8_bin DEFAULT NULL,
+  `Address` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `script` varchar(25) COLLATE utf8_bin DEFAULT NULL,
+  `action` int(11) DEFAULT NULL,
+  `error` text COLLATE utf8_bin
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+CREATE TABLE `route` (
+  `site` varchar(8) COLLATE utf8_bin DEFAULT NULL,
+  `topic` text COLLATE utf8_bin,
+  `description` varchar(500) COLLATE utf8_bin DEFAULT NULL,
+  `title` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `image` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `status` varchar(3) COLLATE utf8_bin DEFAULT NULL,
+  `showinlist` varchar(5) COLLATE utf8_bin DEFAULT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+INSERT INTO `route` (`site`, `topic`, `description`, `title`, `image`, `status`, `showinlist`, `id`) VALUES
+('dummie', 'dummie', 'this is a dummie', 'dummie', '/dummie.png', '1', '1', 1);
+
+ALTER TABLE `config`
+  ADD PRIMARY KEY (`name`);
+
+ALTER TABLE `route`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `route`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
