@@ -30,9 +30,11 @@ if ($showinlist==1){
         <div class=\"mdl-card__media mdl-color-text--grey-50\" style=\"
     background-image: url(images/$image);
 \">
+
             <h3><a href=\"$site\" style=\"
 
 \">$title</a></h3>
+
         </div>
         <div class=\"mdl-color-text--grey-600 mdl-card__supporting-text\">
 $description
