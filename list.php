@@ -1,3 +1,5 @@
+<div class='demo-blog__posts mdl-grid'>
+    <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>
 <?php
 // list generator
 //values $site, $topic, $description,$title,$image
@@ -52,3 +54,4 @@ $description
 }
 
 ?>
+</div>

@@ -31,8 +31,7 @@ if ($ga="true"){
 				    <div class='demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded'>
       <main class='mdl-layout__content'>
 
-        <div class='demo-blog__posts mdl-grid'>
-         <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>
+
 
      <!-- Alpix look here lel -->
           <?php
@@ -41,7 +40,7 @@ if ($ga="true"){
 
 
 
-        </div>
+
           <!-- footer -->
 				 <footer class='mdl-mini-footer'>
           <div class='mdl-mini-footer--left-section'>
