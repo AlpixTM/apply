@@ -45,7 +45,6 @@ if ($dev==TRUE) {
     $simpleURL=parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
     $pageURL .= $_SERVER["SERVER_NAME"].$simpleURL;
 
-
 // dyn redirect link
 $url=$pageURL . "test";
 $handle = curl_init($url);
@@ -59,6 +58,4 @@ else{
     $baselink="";
 }
 curl_close($handle);
-
-
 ?>
