@@ -26,7 +26,7 @@ mysqli_free_result ( $db_erg );
 // sites
 $site=$_GET["$urlparam"];
 if ($dev==true) {
-	echo $site;
+	//echo $site;
 }
 if ($site=="") {
 	$site="home";
