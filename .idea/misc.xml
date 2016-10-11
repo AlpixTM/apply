@@ -11,6 +11,6 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/etc/public_apply.sql" />
+    <file url="file://$PROJECT_DIR$/etc/public_apply.sql.txt" />
   </component>
 </project>
