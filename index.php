@@ -33,7 +33,7 @@ if ($ga="true"){
 
         <div class='demo-blog__posts mdl-grid'>
          <div class='mdl-card__supporting-text meta mdl-color-text--grey-600'>    </div>
-          </div>
+
      <!-- Alpix look here lel -->
           <?php
             include_once "body.php";
@@ -41,7 +41,7 @@ if ($ga="true"){
 
 
 
-
+        </div>
           <!-- footer -->
 				 <footer class='mdl-mini-footer'>
           <div class='mdl-mini-footer--left-section'>
@@ -62,10 +62,11 @@ if ($ga="true"){
           }
        ?>  
        </footer>
-   
+
 		        </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+                    <script>Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'),function(el){var link=el.querySelector('a');if(!link){return;}var target=link.getAttribute('href');if(!target){return;}el.addEventListener('click',function(){location.href=target;});});</script>
 </body>
 </html>

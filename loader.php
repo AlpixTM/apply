@@ -34,5 +34,31 @@ if ($site=="") {
 if ($dev==TRUE) {
 	error_reporting(E_ALL);
 }
+// pageurl
+
+    $pageURL = 'http';
+    if ($_SERVER["HTTPS"] == "on")
+    {
+        $pageURL .= "s";
+    }
+    $pageURL .= "://";
+    $simpleURL=parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+    $pageURL .= $_SERVER["SERVER_NAME"].$simpleURL;
+
+
+// dyn redirect link
+$url=$pageURL . "test";
+$handle = curl_init($url);
+curl_setopt($handle,  CURLOPT_RETURNTRANSFER, TRUE);
+$response = curl_exec($handle);
+$httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
+if($httpCode == 404) {
+ $baselink="?".$urlparam."=";
+}
+else{
+    $baselink="";
+}
+curl_close($handle);
+
 
 ?>
